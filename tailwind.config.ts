@@ -12,14 +12,15 @@ const config: Config = {
     extend: {
      container: {
       center: true,
-      padding: "20px"
+      padding: "20px" 
 
      },
      colors: {
         "primary-500": "#800080",
         "primary-400": "#A151F1",
         "primary-300": "#782F78",
-        "primary-200": "#ECD9F2",
+       "primary-200": "#ECD9F2",
+        "secondary-100":"#933535",
         "accent-500": "#FDBA74",
         "accent-400": "#F6BC7D",
          "accent-300":"#FB923C",

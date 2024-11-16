@@ -8,8 +8,9 @@ interface cardProps {
 }
 const Card = ({ icon, title, desc }: cardProps) => {
   return (
-    <div className=" flex flex-1 flex-col items-center gap-5 py-10 border-2">
-      <div className=" w-[60px] h-[60px] rounded-[50%] flex justify-center
+    <div className=" hover:shadow-2xl px-3 bg-white rounded-2xl flex flex-1 flex-col items-center gap-5 py-10 border-2">
+      <div
+        className=" w-[60px] h-[60px] rounded-[50%] flex justify-center
        items-center text-white bg-red-600"
       >
         {icon}

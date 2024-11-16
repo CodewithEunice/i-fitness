@@ -26,22 +26,12 @@ const Navbar = () => {
     },
     {
       id: 3,
-      title: "Corporate",
-      path: "#corporate",
-    },
-    {
-      id: 4,
       title: "About Us",
       path: "#about",
     },
-    {
-      id: 5,
-      title: "Shop",
-      path: "#shop",
-    },
 
     {
-      id: 6,
+      id: 4,
       title: "Newsletter",
       path: "#news",
     },
@@ -49,14 +39,14 @@ const Navbar = () => {
 
   return (
     <header
-      className="w-full h-[110px] flex items-center fixed bg-black
-      py-5  z-50 font-semibold  text-white"
+      className="w-full h-[12%]  flex items-center fixed bg-black
+       z-50 font-semibold  text-white"
     >
       <div className="container justify-between flex items-center">
-        <div className=" w-auto ">
+        <div className=" ">
           <Image
-            width={250}
-            height={100}
+            width={180}
+            height={48}
             src="/images/Logo/iilogoGraphic.png"
             alt="Logo"
           />
@@ -74,7 +64,7 @@ const Navbar = () => {
           } w-[70%] md:w-auto absolute top-0 
           h-screen md:static md:h-auto 
         md:bg-transparent flex items-center duration-500 ease-in
-         bg-black px-5 md:px-0 pt-20 md:pt-0`}
+         bg-black px-5  md:px-0 pt-20 md:pt-0`}
         >
           <ul
             className="flex flex-col text-white 
@@ -83,7 +73,9 @@ const Navbar = () => {
           >
             {links.map((link) => (
               <li onClick={() => setOpen(false)} key={link.id}>
-                <Link href={link.path}>{link.title}</Link>
+                <Link href={link.path} className="hover:text-red-500">
+                  {link.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -93,7 +85,12 @@ const Navbar = () => {
               className={`${itemstyles}  
              `}
             >
-              Deals
+              <button
+                className=" px-5 py-1 my-2 rounded-full cursor-pointer fon-bold text-white
+           bg-red-700 hover:bg-red-600"
+              >
+                Book Now
+              </button>
             </Link>
           </div>
         </nav>
